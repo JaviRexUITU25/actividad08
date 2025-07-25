@@ -13,7 +13,7 @@ while True:
             products.append(addp)
         case "2":
             print("Actual list:", products)
-            modp = input("Ingrese el producto que desea modificar: ")
+            modp = int(input("Ingrese el indice que desea modificar: "))
             new_value = input("Ingrese el nuevo valor a agregar: ")
             products[modp] = new_value
             print("¡Elemento modificado!")
@@ -28,6 +28,8 @@ while True:
         case "5":
             print("¡Saliendo del programa!")
             break
+        case _:
+            print("Ingrese una opcion valida")
 
 
 
